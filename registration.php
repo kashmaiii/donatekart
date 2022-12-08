@@ -28,7 +28,7 @@
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $name=$_POST['name'];
                 $password=$_POST['pass'];
-                $result="INSERT INTO DON_VALUE('$name','$password')";
+                $result="INSERT INTO DON_INFO VALUES('$name','$password')";
               }
             }
         ?>
