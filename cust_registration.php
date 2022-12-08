@@ -21,14 +21,14 @@
             $servername = "localhost";
             $username = "root";
             $password = "";
-            $database="donor";
+            $database="receiver";
             
             $conn = mysqli_connect($servername, $username, $password,$database);
             if ($conn){
             if (isset($_POST['submit'])) {
                 $name=$_POST['name'];
                 $password=$_POST['pass'];
-                $result="INSERT INTO don_info(EMAIL_ID,PASSWORD1) VALUES('$name','$password')";
+                $result="INSERT INTO CUST_INFO VALUES('$name','$password')";
                 $q=mysqli_query($conn,$result);
                 echo $q;
               }
